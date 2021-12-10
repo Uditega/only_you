@@ -45,10 +45,10 @@ class _BottomNavigationState extends State<BottomNavigation> {
           color: OnlyYouColor.subText,
         ),
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home_max_rounded)),
-          BottomNavigationBarItem(icon: Icon(Icons.favorite_border_rounded)),
-          BottomNavigationBarItem(icon: Icon(Icons.notifications_none_rounded)),
-          BottomNavigationBarItem(icon: Icon(Icons.email_outlined)),
+          BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: ''),
+          BottomNavigationBarItem(icon: Icon(Icons.favorite_border_rounded), label: ''),
+          BottomNavigationBarItem(icon: Icon(Icons.notifications_none_rounded), label: ''),
+          BottomNavigationBarItem(icon: Icon(Icons.email_outlined), label: ''),
         ],
       ),
     );

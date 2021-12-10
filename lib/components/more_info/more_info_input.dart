@@ -7,14 +7,14 @@ Widget moreInfoInputField(text, constraints){
     children: [
       Text('$text',
         style: TextStyle(
-          fontSize: 10,
+          fontSize: 11,
           color: OnlyYouColor.lightBlack,
         ),
       ),
-      const SizedBox(height: 11),
+      const SizedBox(height: 14),
       Container(
         margin: EdgeInsets.zero,
-        height: constraints.maxHeight*0.13,
+        height: constraints.maxHeight*0.075,
         width: constraints.maxWidth*1,
         decoration: BoxDecoration(
           color: OnlyYouColor.boxLightGrey,
@@ -34,7 +34,7 @@ Widget moreInfoInputField(text, constraints){
           ),
         ),
       ),
-      const SizedBox(height: 12),
+      const SizedBox(height: 14),
     ],
   );
 }

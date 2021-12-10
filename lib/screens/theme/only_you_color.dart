@@ -3,7 +3,7 @@ import 'package:hexcolor/hexcolor.dart';
 
 class OnlyYouColor {
 
-  static Color whiteColor = HexColor("#ffffff");
+  static Color whiteColor = Colors.white;
   static Color lightRed = HexColor("#ef3742");
   static Color lightBlue = HexColor("#64b9e8");
   static Color mainText = HexColor("#000000");

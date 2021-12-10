@@ -11,22 +11,35 @@ class MoreInfo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-    return LayoutBuilder(builder: (ctx, constraints){
+    return LayoutBuilder(builder: (ctx, constraints) {
       return Scaffold(
         resizeToAvoidBottomInset: false,
         body: SafeArea(
-            child: SingleChildScrollView(
+          child: SingleChildScrollView(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Column(
                 children: [
-                  moreInfoImageSection(),
+                  SizedBox(
+                    height: constraints.maxHeight*0.34,
+                    child: moreInfoImageSection(context),
+                  ),
                   genderSelector(context),
                   moreInfoInputField('How old are you?', constraints),
                   moreInfoInputField('Location', constraints),
-                  regularButton(context, 0.08, 0.8, OnlyYouColor.lightRed, 'Continue')
+                  SizedBox(height: constraints.maxHeight*0.03),
+                  GestureDetector(
+                    behavior: HitTestBehavior.opaque,
+                    onTap: (){
+                      Navigator.pushNamed(context, '/BottomNavigation');
+                    },
+                    child: regularButton(
+                        context, 0.08, 0.8, OnlyYouColor.lightRed, 'Continue'),
+                  )
                 ],
               ),
             ),
+          ),
         ),
       );
     });

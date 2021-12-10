@@ -7,14 +7,17 @@ class CustomTheme {
         fontFamily: 'Poppins_Regular',
         scaffoldBackgroundColor: OnlyYouColor.whiteColor,
         appBarTheme: AppBarTheme(
+          elevation: 0,
           backgroundColor: OnlyYouColor.whiteColor,
           iconTheme: IconThemeData(color: OnlyYouColor.mainText),
           titleTextStyle: TextStyle(
             color: OnlyYouColor.mainText,
-            fontSize: 17.0,
+            fontSize: 18.0,
             fontWeight: FontWeight.w500,
           ),
-          actionsIconTheme: IconThemeData(color: OnlyYouColor.mainText),
+          actionsIconTheme: IconThemeData(
+              color: OnlyYouColor.mainText
+          ),
         ),
         textTheme: TextTheme(
           bodyText1: TextStyle(

@@ -12,9 +12,9 @@ Widget genderSelector(context){
           color: OnlyYouColor.lightBlack,
         ),
       ),
-      const SizedBox(height: 11),
+      const SizedBox(height: 13),
       SizedBox(
-          height: MediaQuery.of(context).size.height*0.15,
+          height: MediaQuery.of(context).size.height*0.1,
           width: MediaQuery.of(context).size.width*1,
           child: const GenderCard(),
       ),

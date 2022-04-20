@@ -1,3 +1,5 @@
+import 'package:OnlyYou/components/messages/message_appbar.dart';
+import 'package:OnlyYou/components/messages/message_card.dart';
 import 'package:flutter/material.dart';
 
 class MessagePage extends StatelessWidget {
@@ -5,10 +7,16 @@ class MessagePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: SafeArea(
-        child: Center(
-          child: Text('Message'),
+    return Scaffold(
+      appBar: messageAppBar(),
+      body: Padding(
+        padding: const EdgeInsets.only(top: 20),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            messageCard(context, 'images/firstGuy.jpg', 'Robert Fox', 'Where do we meet?', '10 : 34 pm'),
+            messageCard(context, 'images/secondGuy.jpg', 'Leslie Alexander', 'Am available for you dear?', '09 : 34 am'),
+          ],
         ),
       ),
     );
